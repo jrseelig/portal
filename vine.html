@@ -1,292 +1,149 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
- <head>
-  <meta content="initial-scale = 1" name="viewport"/>
-  <title>
-   vine
-  </title>
-  <style type="text/css">
-   body {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>vine</title>
+
+<style>
+body {
     margin: 0;
     font-family: Avenir, sans-serif;
 }
 
 .links {
     display: grid;
-    grid-template-columns: repeat(3, minmax(180px, 1fr));
-    gap: 32px 48px;
+    grid-template-columns: repeat(3, max-content);
+    gap: 32px 60px;
     align-items: start;
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 0 24px 80px;
+    justify-content: center;
+    margin: 30px auto 0;
+    padding: 0 24px 140px;
     font-size: 20px;
     line-height: 26px;
 }
 
 .section {
-    min-width: 0;
+    break-inside: avoid;
 }
 
-.section h3 {
+h3 {
+    margin: 0 0 4px;
     font-size: 20px;
-    font-weight: bold;
-    margin: 0 0 8px;
 }
 
-.section a {
-    display: block;
-}
-
-a,
-a:visited,
-a:active,
-a:hover,
-a:focus {
+a {
     color: blue;
-    outline: 0;
 }
 
-@media only screen and (max-width: 700px) {
+@media (max-width: 700px) {
     .links {
         grid-template-columns: 1fr;
-        max-width: none;
-        margin: 24px 0;
-        padding: 0 20px 60px;
+        justify-content: start;
+        margin: 30px 20px 0;
+        padding: 0 0 80px;
         font-size: 22px;
         line-height: 26px;
-        gap: 28px;
     }
 }
-  </style>
- </head>
- <body>
-  <div class="links">
-   <div class="section">
-    <h3>
-     tech &amp; misc
-    </h3>
-    <a href="https://www.amazon.com/vine/vine-items?search=bluetti">
-     bluetti
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=acoustic">
-     acoustic
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=exercise">
-     exercise
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=flashlight">
-     flashlight
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=knife">
-     knife
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=fork">
-     fork
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=spoon">
-     spoon
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=15+pro">
-     15 pro
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=apple">
-     apple
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=accord+2022">
-     accord 2022
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=safe">
-     safe
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=ultrasonic">
-     ultrasonic
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=ultrasound">
-     ultrasound
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=tape">
-     tape
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=plant">
-     plant
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=Hydroponic">
-     hydroponic
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=1620">
-     cr1620
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=cr123a">
-     cr123a
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=camping">
-     camping
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=hiking">
-     hiking
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=backpacking">
-     backpacking
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=gloves">
-     gloves
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=cotton">
-     cotton
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=rug">
-     rug
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=carpet">
-     carpet
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=merino">
-     merino
-    </a>
-   </div>
-   <div class="section">
-    <h3>
-     medical &amp; air
-    </h3>
-    <a href="https://www.amazon.com/vine/vine-items?search=Air+Quality+Monitor">
-     air
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=aqi">
-     aqi
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=blood">
-     blood
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=first+aid">
-     first aid
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=medical">
-     medical
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=nitrile">
-     nitrile
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=scissors">
-     scissors
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=trauma">
-     trauma
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=emergency">
-     emergency
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=humidity">
-     humidity
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=PM2.5">
-     PM2.5
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=AP-1512HH">
-     coway airmega
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=core+300">
-     core 300
-    </a>
-   </div>
-   <div class="section">
-    <h3>
-     shed &amp; storage
-    </h3>
-    <a href="https://www.amazon.com/vine/vine-items?search=shed">
-     shed
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=storage">
-     storage
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=pouch">
-     pouch
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=bag">
-     bag
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=sack">
-     sack
-    </a>
-   </div>
-   <div class="section">
-    <h3>
-     tactical &amp; tools, Etc
-    </h3>
-    <a href="https://www.amazon.com/vine/vine-items?search=scope">
-     scope
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=holosun">
-     holosun
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=osight">
-     osight
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=utility">
-     utility
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=military">
-     military
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=lock+box">
-     lock box
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=ramp">
-     ramp
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=bungee">
-     bungee
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=mat">
-     mat
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=target">
-     target
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=spotting">
-     spotting
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=Sight">
-     sight
-    </a>
-   </div>
-   <div class="section">
-    <h3>
-     home &amp; electronics
-    </h3>
-    <a href="https://www.amazon.com/vine/vine-items?search=Sateen">
-     Sateen
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=cotton+sheet">
-     cotton sheet
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=jewish">
-     jewish
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=Toothbrush">
-     toothbrush
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=sonicare">
-     sonicare
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=DYMO+LM+160">
-     dymo 160
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=pen">
-     pen
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=iphone">
-     iphone
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=macbook">
-     macbook
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=power+station">
-     power station
-    </a>
-    <a href="https://www.amazon.com/vine/vine-items?search=anker">
-     anker
-    </a>
-   </div>
-  </div>
- </body>
+</style>
+</head>
+
+<body>
+<div class="links">
+    <div class="section">
+        <h3>tech &amp; misc</h3>
+
+        <a href="https://www.amazon.com/vine/vine-items?search=bluetti">bluetti</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=acoustic">acoustic</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=exercise">exercise</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=flashlight">flashlight</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=knife">knife</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=fork">fork</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=spoon">spoon</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=15+pro">15 pro</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=apple">apple</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=accord+2022">accord 2022</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=safe">safe</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=ultrasonic">ultrasonic</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=ultrasound">ultrasound</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=tape">tape</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=1620">cr1620</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=cr123a">cr123a</a><br>
+        
+        <a href="https://www.amazon.com/vine/vine-items?search=gloves">gloves</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=cotton">cotton</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=rug">rug</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=carpet">carpet</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=merino">merino</a><br>
+    </div>
+
+    <div class="section">
+        <h3>medical &amp; air</h3>
+
+        <a href="https://www.amazon.com/vine/vine-items?search=Air+Quality+Monitor">air</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=aqi">aqi</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=blood">blood</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=first+aid">first aid</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=medical">medical</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=nitrile">nitrile</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=scissors">scissors</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=trauma">trauma</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=emergency">emergency</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=humidity">humidity</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=PM2.5">PM2.5</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=AP-1512HH">coway airmega</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=core+300">core 300</a><br>
+    </div>
+
+    <div class="section">
+        <h3>shed, outdoors &amp; storage</h3>
+
+        <a href="https://www.amazon.com/vine/vine-items?search=shed">shed</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=storage">storage</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=pouch">pouch</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=bag">bag</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=sack">sack</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=camping">camping</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=hiking">hiking</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=backpacking">backpacking</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=plant">plant</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=Hydroponic">hydroponic</a><br>
+    </div>
+
+    <div class="section">
+        <h3>tactical &amp; tools, Etc</h3>
+
+        <a href="https://www.amazon.com/vine/vine-items?search=scope">scope</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=holosun">holosun</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=osight">osight</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=utility">utility</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=military">military</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=lock+box">lock box</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=ramp">ramp</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=bungee">bungee</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=mat">mat</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=target">target</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=spotting">spotting</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=Sight">sight</a><br>
+    </div>
+
+    <div class="section">
+        <h3>home &amp; electronics</h3>
+
+        <a href="https://www.amazon.com/vine/vine-items?search=Sateen">Sateen</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=cotton+sheet">cotton sheet</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=jewish">jewish</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=Toothbrush">toothbrush</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=sonicare">sonicare</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=DYMO+LM+160">dymo 160</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=pen">pen</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=iphone">iphone</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=macbook">macbook</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=power+station">power station</a><br>
+        <a href="https://www.amazon.com/vine/vine-items?search=anker">anker</a><br>
+    </div>
+
+</div>
+</body>
 </html>
